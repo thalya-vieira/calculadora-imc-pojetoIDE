@@ -1,0 +1,149 @@
+/* body{
+    background-color: bisque;
+}
+
+main{
+    background-color: aqua;
+    padding: 2rem;
+}
+
+button{
+    background-color: rgb(144, 248, 170);
+    color: rgb(219, 15, 219);
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    box-shadow: rgb(252, 6, 6);
+}
+
+button:hover{
+    background-color: blue;
+
+} */
+
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #96b5df, #e0e7ff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #1e293b;
+}
+
+/* Container principal */
+main {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    padding: 35px 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+}
+img{
+    width: 6rem;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #1361b9;
+    margin-bottom: 30px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Rótulos */
+label {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Campos de entrada */
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #0b74f3;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Efeito ao selecionar um campo */
+input:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.15);
+}
+
+/* Botão */
+button {
+    margin-top: 15px;
+    padding: 14px;
+    background-color: #1361b9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Efeito ao passar o mouse */
+button:hover {
+    background-color: #3730a3;
+    transform: translateY(-2px);
+}
+
+/* Efeito ao clicar */
+button:active {
+    transform: translateY(0);
+}
+
+/* Resultado do IMC */
+output {
+    display: block;
+    margin-top: 22px;
+    padding: 14px;
+    border-radius: 8px;
+    background-color: #eef2ff;
+    color: #312e81;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* Resultado vazio */
+output:empty {
+    display: none;
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 480px) {
+    main {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <main>
+        <img src="/WhatsApp Image 2026-10-21 at 16.17.41.jpeg" alt="">
+        <h1>Calculadora de IMC</h1>
+
+        <form id="formulario">
+
+            <label for="peso">Peso (kg):</label>
+            <input
+                type="number"
+                id="peso"
+                placeholder="Ex.: 70"
+                min="1"
+                max="500"
+                step="any"
+                required
+            >
+
+            <label for="altura">Altura (cm):</label>
+            <input
+                type="number"
+                id="altura"
+                placeholder="Ex.: 170"
+                min="30"
+                max="250"
+                step="any"
+                required
+            >
+
+            <button type="submit">Calcular IMC</button>
+
+        </form>
+
+        <output id="resultado" aria-live="polite"></output>
+    </main>
+
+    <script src="/scrypt.js"></script>
+
+</body>
+</html>
